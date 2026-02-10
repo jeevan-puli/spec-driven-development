@@ -48,10 +48,9 @@ Your solution should include at least one real workflow, for example:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/automationExamples/spec-driven-development.git
-cd spec-driven-development
+https://github.com/jeevan-puli/spec-driven-development/tree/resource-management-api
 ```
-If you are reviewing this work via a pull request, check out the feature branch:
+check out the feature branch:
 ```bash
 git checkout resource-management-api
 ```
