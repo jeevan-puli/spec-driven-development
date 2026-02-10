@@ -41,3 +41,50 @@ Your solution should include at least one real workflow, for example:
 - When you are complete, put up a Pull Request against this repository with your changes.
 - A short summary of your approach and tools used in your PR submission
 - Any additional information or approach that helped you.
+
+++++++++++++++++++++++++++++++++++++++++++++++
+
+## Local Setup and Usage
+
+### Clone the Repository
+```bash
+git clone https://github.com/automationExamples/spec-driven-development.git
+cd spec-driven-development
+```
+
+### Create and Activate Virtual Environment (Python)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### Run the Application
+Start the FastAPI server locally:
+```bash
+uvicorn app.main:app --reload
+```
+Verify the API is running by opening:
+```bash
+http://127.0.0.1:8000/docs
+```
+
+### You can also manually verify the API:
+```bash
+curl -X POST http://127.0.0.1:8000/resources \
+  -H "Content-Type: application/json" \
+  -d '{"name":"example","type":"demo"}'
+```
+### Run Tests
+Execute the full test suite:
+```bash
+pytest
+```
+
+## Code Generation Usage
+Modern code generation tools (ChatGPT / Codex-style models) were used to
+accelerate scaffolding of the API and test cases. All generated code was
+reviewed and refined manually to ensure correctness, determinism, and
+coverage of edge cases.
