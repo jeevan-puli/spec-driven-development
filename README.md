@@ -51,6 +51,10 @@ Your solution should include at least one real workflow, for example:
 git clone https://github.com/automationExamples/spec-driven-development.git
 cd spec-driven-development
 ```
+If you are reviewing this work via a pull request, check out the feature branch:
+```bash
+git checkout resource-management-api
+```
 
 ### Create and Activate Virtual Environment (Python)
 ```bash
