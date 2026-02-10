@@ -80,3 +80,10 @@ def test_response_schema_contains_expected_fields():
 
     assert set(body.keys()) == {"id", "name", "type"}
 
+def test_list_resources_returns_empty_list_when_no_resources_exist():
+    response = client.get("/resources")
+
+    assert response.status_code == 200
+    assert response.json() == []
+
+
