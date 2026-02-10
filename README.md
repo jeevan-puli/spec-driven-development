@@ -77,10 +77,15 @@ curl -X POST http://127.0.0.1:8000/resources \
   -H "Content-Type: application/json" \
   -d '{"name":"example","type":"demo"}'
 ```
-### Run Tests
+### Run Tests (without readable logs)
 Execute the full test suite:
 ```bash
 pytest
+```
+### Run Tests (with readable logs)
+Execute the full test suite:
+```bash
+pytest --log-cli-level=INFO
 ```
 
 ## Code Generation Usage
